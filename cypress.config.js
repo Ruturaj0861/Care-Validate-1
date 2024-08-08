@@ -21,6 +21,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config);
     },
-    baseUrl: "http://139.5.189.142:3111/signin"
+    baseUrl: "https://careglp-staging.carevalidate.com/"
   }
 });

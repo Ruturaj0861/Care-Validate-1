@@ -8,7 +8,7 @@ Cypress.on('test:after:run', (test, runnable) => {
 
     // Add screen recording
     const videoName = `${testName} (failed).mp4`
-    const videoUrl = `../${Cypress.spec.name}/${videoName}` // Adjust the relative path as per your project structure
+    const videoUrl = `../${Cypress.spec.name}/${videoName}` 
     addContext({ test }, videoUrl)
   }
 })

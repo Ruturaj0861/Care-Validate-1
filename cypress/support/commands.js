@@ -11,10 +11,9 @@
 //
 // -- This is a parent command --
 Cypress.Commands.add("conduitLogin", function(email,password){
-    cy.visit('http://139.5.189.142:3111/signin')
-    cy.get('#email').type('ruturajdarekar24@gmail.com')
-    cy.get('#password').type('Test@123')
-    cy.get('.signinform-button').click()
+    cy.visit('https://careglp-staging.carevalidate.com/')
+    cy.get('#email').type('qa+employee@carevalidate.com')
+    cy.get('#password').type('bLPgk5tr7D3ZqpXvV@aNKz')
 })
 
 import 'cypress-file-upload';
